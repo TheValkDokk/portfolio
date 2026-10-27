@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cao Chanh Duc — one person for mobile, web and backend</title>
+<meta name="description" content="I build the app, the API behind it and the business that pays for both. Flutter, TypeScript, Python. Ho Chi Minh City.">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="Cao Chanh Duc">
+<meta property="og:description" content="Mobile, web and backend, one person. Appdex, Marble Yard, NY MUSIC.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f%5B%5D=boska@400,500&f%5B%5D=switzer@400,500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+<div class="stage">
+  <aside class="rail" aria-hidden="true">
+    <div class="rail-inner" data-rail>
+      <figure class="shot is-on" data-shot="hero">
+        <img src="assets/appdex-home.jpg" alt="" width="1400" height="1750" fetchpriority="high">
+        <figcaption>appdex.co. The business I run on my own code</figcaption>
+      </figure>
+      <figure class="shot" data-shot="appdex">
+        <img src="assets/appdex-tools.jpg" alt="" width="1400" height="1750" loading="lazy">
+        <figcaption>tools.appdex.co. 1,935 app pages from one build</figcaption>
+      </figure>
+      <figure class="shot" data-shot="marble">
+        <img class="art" src="assets/marble-coin.png" alt="" width="1000" height="932" loading="lazy">
+        <figcaption>Marble Yard. The coin the ledger is made of</figcaption>
+      </figure>
+      <figure class="shot" data-shot="nymusic">
+        <img src="assets/nymusic.jpg" alt="" width="1400" height="1750" loading="lazy">
+        <figcaption>nymusickr.com. The storefront I built solo</figcaption>
+      </figure>
+      <figure class="shot" data-shot="current">
+        <img src="assets/appdex-app.jpg" alt="" width="1400" height="1750" loading="lazy">
+        <figcaption>A page the API fills. One app, 19 storefronts, real ranks</figcaption>
+      </figure>
+    </div>
+  </aside>
+
+  <div class="read">
+    <header class="hero" data-shot-target="hero">
+      <figure class="hero-shot">
+        <img src="assets/appdex-home.jpg" alt="The Appdex home page: every store, one dataset" width="1400" height="1750" fetchpriority="high">
+      </figure>
+      <nav class="nav" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="mailto:duccaochanh@gmail.com?subject=Founding%20engineer%20role">Email me</a>
+      </nav>
+
+      <p class="support">I build the app, the API behind it and the business that pays for both. One person, in Ho&nbsp;Chi&nbsp;Minh City.</p>
+
+      <h1 class="name"><span class="name-in">cao chanh duc</span></h1>
+    </header>
+
+    <section id="work" class="work" data-shot-target="appdex">
+      <h2>What I have shipped</h2>
+      <ol class="roster">
+        <li>
+          <a href="#appdex" data-shot="appdex">
+            <span class="roster-name">Appdex</span>
+            <span class="roster-meta">App store data, sold as an API</span>
+            <span class="roster-year">2026</span>
+          </a>
+        </li>
+        <li>
+          <a href="#marble" data-shot="marble">
+            <span class="roster-name">Marble Yard</span>
+            <span class="roster-meta">Android puzzle game, server-side coins</span>
+            <span class="roster-year">2026</span>
+          </a>
+        </li>
+        <li>
+          <a href="#nymusic" data-shot="nymusic">
+            <span class="roster-name">NY MUSIC</span>
+            <span class="roster-meta">Commerce storefront, built alone</span>
+            <span class="roster-year">2024</span>
+          </a>
+        </li>
+      </ol>
+      <p class="also">Also on GitHub: <a href="https://github.com/TheValkDokk/appstore-data-mcp">appstore-data-mcp</a>, an MCP server for the same store data, and <a href="https://github.com/TheValkDokk/promptkit">promptkit</a>, a runner that scores prompts against golden cases.</p>
+    </section>
+
+    <section id="appdex" class="case" data-shot-target="appdex">
+      <h2>A business on public data</h2>
+      <p class="lede">Appdex turns public App Store and Google&nbsp;Play pages into one dataset, then sells it. I built the crawler, the API, the free tools that make the data findable, and the site that sells it.</p>
+
+      <figure class="inline-shot">
+        <img src="assets/appdex-tools.jpg" alt="Appdex Tools home page: search box, four counted figures, top free chart" width="1400" height="1750" loading="lazy">
+        <figcaption>tools.appdex.co, today.</figcaption>
+      </figure>
+
+      <dl class="facts">
+        <div>
+          <dt>1,935</dt>
+          <dd>apps tracked across 20 storefronts, refreshed every morning</dd>
+        </div>
+        <div>
+          <dt>3,988</dt>
+          <dd>chart rows behind 40 charts; 1,935 app pages and 20 country hubs, all static HTML from one build</dd>
+        </div>
+        <div>
+          <dt>1 API</dt>
+          <dd>sold on RapidAPI, plus an MCP server so an agent can query it directly</dd>
+        </div>
+        <div>
+          <dt>0 servers</dt>
+          <dd>a Next.js export on a Cloudflare Worker; IndexNow is told only about the pages that changed</dd>
+        </div>
+      </dl>
+
+      <p class="links"><a href="https://appdex.co">appdex.co</a> <a href="https://tools.appdex.co">tools.appdex.co</a></p>
+    </section>
+
+    <section id="marble" class="case" data-shot-target="marble">
+      <h2>Coins that live on a server</h2>
+      <p class="lede">A marble-sorting puzzle for Android, built in Unity. Anything a player could edit on the phone is checked somewhere else.</p>
+
+      <figure class="inline-shot">
+        <img class="art" src="assets/marble-coin.png" alt="The game's gold coin, rendered by the artist" width="1000" height="932" loading="lazy">
+        <figcaption>The coin shop spends these; the ledger that owns them is not on the device.</figcaption>
+      </figure>
+
+      <dl class="facts">
+        <div>
+          <dt>Receipt</dt>
+          <dd>Play Billing returns a token to a Cloud Function, which asks Google whether it is real and unused before a single coin is credited</dd>
+        </div>
+        <div>
+          <dt>Ledger</dt>
+          <dd>balance and history written in a Firestore transaction, so a modified client can spend only what it owns</dd>
+        </div>
+        <div>
+          <dt>Editor</dt>
+          <dd>levels, trays and tool unlocks authored through tooling I wrote inside Unity</dd>
+        </div>
+        <div>
+          <dt>Now</dt>
+          <dd>in Play closed testing; ads and analytics wired, store listing ready</dd>
+        </div>
+      </dl>
+
+      <p class="links"><a href="https://thevalkdokk.github.io/policies/">Privacy policy</a></p>
+    </section>
+
+    <section id="nymusic" class="case" data-shot-target="nymusic">
+      <h2>A storefront, built alone</h2>
+      <p class="lede">A Korean idol album store, live at nymusickr.com. Remix on a Vendure GraphQL backend: payments, order management, admin dashboard and transactional email.</p>
+
+      <figure class="inline-shot">
+        <img src="assets/nymusic.jpg" alt="NY MUSIC storefront: pre-order banner, best album list with won prices" width="1400" height="1750" loading="lazy">
+        <figcaption>nymusickr.com, still selling.</figcaption>
+      </figure>
+
+      <dl class="facts">
+        <div>
+          <dt>Six months</dt>
+          <dd>November 2023 to April 2024, solo from schema to storefront</dd>
+        </div>
+        <div>
+          <dt>Under burst</dt>
+          <dd>a pre-order opened to tens of thousands at once; a queue gate held the front while the storefront kept serving</dd>
+        </div>
+        <div>
+          <dt>Vendure</dt>
+          <dd>order, stock and price checked server side; the browser only shows the result</dd>
+        </div>
+        <div>
+          <dt>Mine to hand over</dt>
+          <dd>built at Burning Bros; the client owns the store now</dd>
+        </div>
+      </dl>
+
+      <p class="links"><a href="https://nymusickr.com">nymusickr.com</a></p>
+    </section>
+
+    <section id="now" class="now" data-shot-target="current">
+      <h2>Where I work now</h2>
+      <p class="big">Consumer AI apps in production for a studio in Ho Chi Minh City. <span class="num">1K+</span> daily users on the flagship, <span class="num">4.8</span> stars.</p>
+      <p>I built the platform the rest of them boot from: a shared design system and theme, the starter template every new app begins as, the purchase and paywall layer, a structured logger, and the release tooling. Five apps have shipped on it.</p>
+    </section>
+  </div>
+</div>
+
+<section id="stack" class="band band-stack">
+  <h2>Every layer</h2>
+  <div class="cols">
+    <div class="col">
+      <p class="col-kind">Mobile</p>
+      <p>Flutter<br>Dart<br>Kotlin<br>Swift<br>Unity<br>C#</p>
+    </div>
+    <div class="col">
+      <p class="col-kind">Web</p>
+      <p>TypeScript<br>React<br>Remix<br>Next.js<br>HTML and CSS</p>
+    </div>
+    <div class="col">
+      <p class="col-kind">Backend</p>
+      <p>NestJS<br>Node<br>Python<br>FastAPI<br>REST<br>GraphQL</p>
+    </div>
+    <div class="col">
+      <p class="col-kind">Data</p>
+      <p>PostgreSQL<br>Firestore<br>Firebase<br>BigQuery<br>dbt</p>
+    </div>
+    <div class="col">
+      <p class="col-kind">Platform</p>
+      <p>GitHub Actions<br>Fastlane<br>Codemagic<br>Cloudflare Workers<br>Docker<br>GCP</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-trace" id="trace">
+  <h2>Follow one request</h2>
+  <p class="band-lede">Three things I shipped, followed from the screen down to the row and back. Pick one.</p>
+
+  <div class="trace" data-trace>
+    <div class="trace-tabs" role="tablist" aria-label="Flows">
+      <button type="button" role="tab" aria-selected="true" aria-controls="flow-coin" id="tab-coin">A coin purchase</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="flow-chart" id="tab-chart" tabindex="-1">A chart page</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="flow-checkout" id="tab-checkout" tabindex="-1">A checkout</button>
+    </div>
+
+    <div class="flow" id="flow-coin" role="tabpanel" aria-labelledby="tab-coin" data-flow="coin">
+      <h3>A coin purchase</h3>
+      <ol>
+        <li><span>The screen</span><p>A player taps a coin pack. The client never writes a balance, it only asks for one.</p></li>
+        <li><span>The receipt</span><p>Play returns a purchase token to the Cloud Function. The game does not get to keep it.</p></li>
+        <li><span>Google</span><p>The function asks Play whether that token is real, mine, and not already spent.</p></li>
+        <li><span>The ledger</span><p>A Firestore transaction credits the coins and records a hash of the token. Run it twice, nothing doubles.</p></li>
+        <li><span>The screen again</span><p>The game re-reads its balance and shows what it now owns.</p></li>
+      </ol>
+      <p class="claim">A phone that lies about a purchase cannot move a single coin.</p>
+    </div>
+
+    <div class="flow" id="flow-chart" role="tabpanel" aria-labelledby="tab-chart" data-flow="chart" hidden>
+      <h3>A chart page</h3>
+      <ol>
+        <li><span>The crawl</span><p>A daily job reads public store pages for 1,935 apps in 20 storefronts.</p></li>
+        <li><span>The rows</span><p>Each rank lands as a row: chart, storefront, position, rating, price.</p></li>
+        <li><span>The build</span><p>One build turns those rows into 1,935 app pages, 40 chart pages and 20 country hubs. Static HTML, no database behind the request.</p></li>
+        <li><span>The edge</span><p>A Cloudflare Worker serves the files. Nothing renders when you load the page.</p></li>
+        <li><span>The index</span><p>IndexNow is given only the URLs whose content actually changed that morning.</p></li>
+      </ol>
+      <p class="claim">Nothing is rendered when you open the page. It was rendered this morning.</p>
+    </div>
+
+    <div class="flow" id="flow-checkout" role="tabpanel" aria-labelledby="tab-checkout" data-flow="checkout" hidden>
+      <h3>A checkout</h3>
+      <ol>
+        <li><span>The action</span><p>A pre-order opens and the burst arrives at once.</p></li>
+        <li><span>The gate</span><p>A queue holds the crowd in front of the storefront instead of letting it hit the database.</p></li>
+        <li><span>The order</span><p>The Remix action writes to Vendure, which checks stock and price where they live.</p></li>
+        <li><span>The payment</span><p>The provider confirms, Vendure records the transaction, the queue moves on.</p></li>
+        <li><span>The email</span><p>A transactional email leaves with the order number and the album it bought.</p></li>
+      </ol>
+      <p class="claim">The queue takes the hit so the database does not.</p>
+    </div>
+  </div>
+</section>
+
+<section class="letter" id="about">
+  <div class="letter-body">
+    <h2>How I work</h2>
+    <p class="mark" aria-hidden="true">CC</p>
+    <p>I started in Flutter and kept going down the stack. Three years of shipped apps later the shape is the same every time: I want the whole thing to work, from the first screen to the row in the database.</p>
+    <p>That means reading logs on a Friday night, writing the migration, then coming back to fix a two-pixel misalignment. It also means I would rather ship one thing that stays up than three that demo well.</p>
+    <p>I work remote from Ho Chi Minh City, UTC+7. My mornings overlap Europe and my evenings overlap the west coast of the US.</p>
+    <p>What I am looking for is a founding or product engineering role at a small team, where one person owning the whole product is the job and not the exception.</p>
+    <p class="sign">Cao Chanh Duc<br><span>Mobile, web and backend</span></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="prompt"><span>You are one engineer short.</span> <span class="ink">Write the first line here.</span></h2>
+  <form class="field" action="mailto:duccaochanh@gmail.com" method="post" enctype="text/plain" data-mailto>
+    <label class="sr" for="line">What you are building</label>
+    <input id="line" name="line" type="text" placeholder="What you are building" autocomplete="off">
+    <button type="submit" aria-label="Open an email with this line">Send<span aria-hidden="true">→</span></button>
+  </form>
+  <p class="next">It opens your mail app with the line already written. Nothing is sent from this page.</p>
+  <dl class="reach">
+    <div><dt>Email</dt><dd><a href="mailto:duccaochanh@gmail.com">duccaochanh@gmail.com</a></dd></div>
+    <div><dt>GitHub</dt><dd><a href="https://github.com/TheValkDokk">TheValkDokk</a></dd></div>
+    <div><dt>Elsewhere</dt><dd><a href="https://www.linkedin.com/in/cao-chanh-duc/">LinkedIn</a></dd></div>
+  </dl>
+</section>
+
+<footer class="foot">
+  <figure class="foot-shot">
+    <img src="assets/appdex-home.jpg" alt="Appdex, the app store data business, close up" width="1400" height="1750" loading="lazy">
+  </figure>
+  <div class="foot-menu">
+    <p class="foot-name">Cao Chanh Duc</p>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://appdex.co">Appdex</a>
+      <a href="https://github.com/TheValkDokk">GitHub</a>
+    </nav>
+    <div class="foot-blocks">
+      <p><a href="mailto:duccaochanh@gmail.com">duccaochanh@gmail.com</a><br>Ho Chi Minh City, UTC+7</p>
+      <p><a href="https://github.com/TheValkDokk">GitHub</a><br><a href="https://www.linkedin.com/in/cao-chanh-duc/">LinkedIn</a></p>
+    </div>
+    <p class="legal">© 2026 Cao Chanh Duc. Every picture here is a screenshot of my own live sites or art from my own game.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
